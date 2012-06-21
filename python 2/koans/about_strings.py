@@ -153,7 +153,7 @@ world!
                     
     def test_strings_can_be_joined(self):
         words = ["Now", "is", "the", "time"]
-        self.assertEqual(__, ' '.join(words))
+        self.assertEqual("Now is the time", ' '.join(words))
 
     def test_strings_can_change_case(self):
         self.assertEqual(__, 'guido'.capitalize())
