@@ -23,8 +23,8 @@ class AboutDictionaries(Koan):
         
     def test_accessing_dictionaries(self):
         babel_fish = {'one': "uno", 'two': "dos"}
-        self.assertEqual(__, babel_fish['one'])
-        self.assertEqual(__, babel_fish['two'])
+        self.assertEqual('uno', babel_fish['one'])
+        self.assertEqual('dos', babel_fish['two'])
         
     def test_changing_dictionaries(self):
         babel_fish = {'one': "uno", 'two': "dos"}
