@@ -91,7 +91,7 @@ world!
         string = "\n"
         self.assertEqual('\n', string)
         self.assertEqual("""\n""", string)
-        self.assertEqual(__, len(string))
+        self.assertEqual(1, len(string))
     
     def test_use_format_to_interpolate_variables(self):
         value1 = 'one'
