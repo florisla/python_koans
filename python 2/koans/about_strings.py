@@ -115,7 +115,7 @@ world!
     
     def test_you_can_get_a_substring_from_a_string(self):
         string = "Bacon, lettuce and tomato"
-        self.assertEqual(__, string[7:10])
+        self.assertEqual('let', string[7:10])
     
     def test_you_can_get_a_single_character_from_a_string(self):
         string = "Bacon, lettuce and tomato"
