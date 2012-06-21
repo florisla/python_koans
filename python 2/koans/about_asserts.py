@@ -29,7 +29,7 @@ class AboutAsserts(Koan):
         To understand reality, we must compare our expectations against
         reality.
         """
-        expected_value = __
+        expected_value = 2
         actual_value = 1 + 1
         self.assertTrue(expected_value == actual_value)
 
