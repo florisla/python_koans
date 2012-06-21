@@ -24,7 +24,7 @@ class AboutStrings(Koan):
 
     def test_raw_strings_are_also_strings(self):
         string = r"Konnichi wa, world!"
-        self.assertEqual(__, isinstance(string, basestring))
+        self.assertEqual(True, isinstance(string, basestring))
         
     def test_use_single_quotes_to_create_string_with_double_quotes(self):
         string = 'He said, "Go Away."'
