@@ -99,8 +99,8 @@ class AboutLists(Koan):
         queue = deque([1, 2])
         queue.append('last')
         
-        self.assertEqual(__, list(queue))
+        self.assertEqual([1,2,'last'], list(queue))
         
         popped_value = queue.popleft()
-        self.assertEqual(__, popped_value)
-        self.assertEqual(__, list(queue))
+        self.assertEqual(1, popped_value)
+        self.assertEqual([2,'last'], list(queue))
