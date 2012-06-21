@@ -48,9 +48,9 @@ class AboutDictionaries(Koan):
         
     def test_dictionary_values(self):
         babel_fish = {'one': "uno", 'two': "dos"}
-        self.assertEqual(__, len(babel_fish.values()))
-        self.assertEqual(__, 'uno' in babel_fish.values())
-        self.assertEqual(__, 'dos' in babel_fish.values())
+        self.assertEqual(2, len(babel_fish.values()))
+        self.assertEqual(True, 'uno' in babel_fish.values())
+        self.assertEqual(True, 'dos' in babel_fish.values())
         self.assertEqual(list, babel_fish.values().__class__)
         
     def test_making_a_dictionary_from_a_sequence_of_keys(self):
