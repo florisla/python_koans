@@ -22,10 +22,10 @@ class AboutLists(Koan):
         self.assertEqual([1], nums)
         
         nums[1:] = [2]
-        self.assertEqual([1, __], nums)
+        self.assertEqual([1, 2], nums)
         
         nums.append(333)
-        self.assertEqual([1, 2, __], nums)
+        self.assertEqual([1, 2, 333], nums)
     
     def test_accessing_list_elements(self):
         noms = ['peanut', 'butter', 'and', 'jelly']
