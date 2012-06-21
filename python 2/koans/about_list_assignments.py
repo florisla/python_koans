@@ -11,7 +11,7 @@ from runner.koan import *
 class AboutListAssignments(Koan):
     def test_non_parallel_assignment(self):
         names = ["John", "Smith"]
-        self.assertEqual(__, names)
+        self.assertEqual(["John", "Smith"], names)
         
     def test_parallel_assignments(self):
         first_name, last_name = ["John", "Smith"]
