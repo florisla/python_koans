@@ -119,7 +119,7 @@ world!
     
     def test_you_can_get_a_single_character_from_a_string(self):
         string = "Bacon, lettuce and tomato"
-        self.assertEqual(__, string[1])
+        self.assertEqual('a', string[1])
     
     def test_single_characters_can_be_represented_by_integers(self):
         self.assertEqual(__, ord('a'))
