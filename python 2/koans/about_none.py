@@ -33,11 +33,11 @@ class AboutNone(Koan):
             None.some_method_none_does_not_know_about()
         except Exception as ex:
             # What exception has been caught?
-            self.assertEqual(__, ex.__class__.__name__)
+            self.assertEqual("AttributeError", ex.__class__.__name__)
             
             # What message was attached to the exception?
             # (HINT: replace __ with part of the error message.)
-            self.assertMatch(__, ex.args[0])
+            self.assertMatch("has no attribute", ex.args[0])
     
     def test_none_is_distinct(self):
         """
