@@ -20,7 +20,7 @@ class AboutStrings(Koan):
 
     def test_triple_single_quotes_work_too(self):
         string = '''Bonjour tout le monde!'''
-        self.assertEqual(__, isinstance(string, basestring))
+        self.assertEqual(True, isinstance(string, basestring))
 
     def test_raw_strings_are_also_strings(self):
         string = r"Konnichi wa, world!"
