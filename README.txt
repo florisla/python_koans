@@ -1,3 +1,5 @@
+This is my personal fork of Python Koans, with my solutions.
+
 ============
 Python Koans
 ============
