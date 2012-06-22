@@ -48,8 +48,8 @@ class AboutLists(Koan):
     def test_slicing_to_the_edge(self):
         noms = ['peanut', 'butter', 'and', 'jelly']
 
-        self.assertEqual(__, noms[2:])
-        self.assertEqual(__, noms[:2])
+        self.assertEqual(['and', 'jelly'], noms[2:])
+        self.assertEqual(['peanut', 'butter'], noms[:2])
 
     def test_lists_and_ranges(self):
         self.assertEqual(range, type(range(5)))
