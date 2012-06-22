@@ -97,11 +97,11 @@ class AboutLists(Koan):
         queue = [1, 2]
         queue.append('last')
 
-        self.assertEqual(__, queue)
+        self.assertEqual([1, 2, 'last'], queue)
 
         popped_value = queue.pop(0)
-        self.assertEqual(__, popped_value)
-        self.assertEqual(__, queue)
+        self.assertEqual(1, popped_value)
+        self.assertEqual([2, 'last'], queue)
 
         # Note, for Python 2 popping from the left hand side of a list is
         # inefficient. Use collections.deque instead.
