@@ -55,7 +55,7 @@ class AboutDictionaries(Koan):
     def test_making_a_dictionary_from_a_sequence_of_keys(self):
         cards = {}.fromkeys(("red warrior", "green elf", "blue valkyrie", "yellow dwarf", "confused looking zebra"), 42)
 
-        self.assertEqual(__, len(cards))
-        self.assertEqual(__, cards["green elf"])
-        self.assertEqual(__, cards["yellow dwarf"])
+        self.assertEqual(5, len(cards))
+        self.assertEqual(42, cards["green elf"])
+        self.assertEqual(42, cards["yellow dwarf"])
 
