@@ -143,7 +143,7 @@ class AboutMethods(Koan):
 
     def test_calling_methods_in_other_objects(self):
         rover = self.Dog()
-        self.assertEqual(__, rover.name())
+        self.assertEqual('Fido', rover.name())
         
     def test_private_access_is_implied_but_not_enforced(self):
         rover = self.Dog()
