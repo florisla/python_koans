@@ -47,8 +47,8 @@ class AboutTuples(Koan):
         self.assertEqual(('S','u','r','p','r','i','s','e','!'), tuple("Surprise!"))
 
     def test_creating_empty_tuples(self):
-        self.assertEqual(__, ())
-        self.assertEqual(__, tuple())  # Sometimes l'ess confusing
+        self.assertEqual(tuple(), ())
+        self.assertEqual(tuple(), tuple())  # Sometimes l'ess confusing
         
     def test_tuples_can_be_embedded(self):
         lat = (37, 14, 6, 'N')
