@@ -25,7 +25,7 @@ class AboutTuples(Koan):
             
             # Note, assertMatch() uses regular expression pattern matching,
             # so you don't have to copy the whole message.
-            self.assertMatch(__, ex[0])
+            self.assertMatch("has no attribute 'append'", ex[0])
         
         # Tuples are less flexible than lists, but faster.
 
