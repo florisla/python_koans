@@ -66,5 +66,5 @@ class AboutTuples(Koan):
             ("Cthulhu", (26, 40, 1, 'N'), (70, 45, 7, 'W'))
         )
         
-        self.assertEqual(__, locations[2][0])
-        self.assertEqual(__, locations[0][1][2])
+        self.assertEqual('Cthulhu', locations[2][0])
+        self.assertEqual(15.56, locations[0][1][2])
