@@ -44,11 +44,11 @@ class AboutTuples(Koan):
         self.assertEqual(tuple(['Hello comma!']), ("Hello comma!", ))
         
     def test_tuple_constructor_can_be_surprising(self):
-        self.assertEqual(__, tuple("Surprise!"))
+        self.assertEqual(('S','u','r','p','r','i','s','e','!'), tuple("Surprise!"))
 
     def test_creating_empty_tuples(self):
         self.assertEqual(__, ())
-        self.assertEqual(__, tuple())  # Sometimes less confusing
+        self.assertEqual(__, tuple())  # Sometimes l'ess confusing
         
     def test_tuples_can_be_embedded(self):
         lat = (37, 14, 6, 'N')
