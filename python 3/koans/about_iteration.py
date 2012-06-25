@@ -39,15 +39,15 @@ class AboutIteration(Koan):
 
         mapping = map(self.add_ten, seq)
 
-        self.assertNotEqual(list, type(mapping).__name__)
-        self.assertEqual(__, type(mapping).__name__)
+        self.assertNotEqual('list', type(mapping).__name__)
+        self.assertEqual('map', type(mapping).__name__)
         # In Python 3 built in iterator funcs return iteratable view objects
         # instead of lists
 
         for item in mapping:
             mapped_seq.append(item)
 
-        self.assertEqual(__, mapped_seq)
+        self.assertEqual([11, 12, 13], mapped_seq)
 
         # None, iterator methods actually return objects of iter type in
         # python 3. In python 2 map() would give you a list.
