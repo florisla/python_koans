@@ -34,11 +34,12 @@ from runner.koan import *
 
 def score(dice):
     score = 0
-    present = set(dice)
-    if 5 in present:
-    	score += 50
-    if 1 in present:
-    	score += 100
+    fives = len([d for d in dice if d==5])
+    ones = len([d for d in dice if d==1])
+    if fives < 3:
+    	score += fives * 50
+    if ones < 3:
+    	score += ones * 100
     return score
 
 class AboutScoringProject(Koan):
