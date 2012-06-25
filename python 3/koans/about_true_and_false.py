@@ -23,10 +23,10 @@ class AboutTrueAndFalse(Koan):
         self.assertEqual('false stuff', self.truth_value(0))
 
     def test_empty_collections_are_treated_as_false(self):
-        self.assertEqual(__, self.truth_value([]))
-        self.assertEqual(__, self.truth_value(()))
-        self.assertEqual(__, self.truth_value({}))
-        self.assertEqual(__, self.truth_value(set()))
+        self.assertEqual('false stuff', self.truth_value([]))
+        self.assertEqual('false stuff', self.truth_value(()))
+        self.assertEqual('false stuff', self.truth_value({}))
+        self.assertEqual('false stuff', self.truth_value(set()))
 
     def test_blank_strings_are_treated_as_false(self):
         self.assertEqual(__, self.truth_value(""))
