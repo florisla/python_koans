@@ -144,8 +144,8 @@ world!
     def test_raw_strings_do_not_interpret_escape_characters(self):
         string = r'\n'
         self.assertNotEqual('\n', string)
-        self.assertEqual(__, string)
-        self.assertEqual(__, len(string))
+        self.assertEqual("\\n", string)
+        self.assertEqual(2, len(string))
 
         # Useful in regular expressions, file paths, URLs, etc.
 
