@@ -51,7 +51,7 @@ class AboutSets(Koan):
         self.assertEqual(True, 'cow' not in set('apocalypse now') )
 
     def test_we_can_compare_subsets(self):
-        self.assertEqual(__, set('cake') <= set('cherry cake'))
-        self.assertEqual(__, set('cake').issubset(set('cherry cake')) )
+        self.assertEqual(True, set('cake') <= set('cherry cake'))
+        self.assertEqual(True, set('cake').issubset(set('cherry cake')) )
 
-        self.assertEqual(__, set('cake') > set('pie'))
+        self.assertEqual(False, set('cake') > set('pie'))
