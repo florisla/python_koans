@@ -63,8 +63,8 @@ class AboutGenerators(Koan):
 
     def test_coroutines_can_take_arguments(self):
         result = self.simple_generator_method()
-        self.assertEqual(__, next(result))
-        self.assertEqual(__, next(result))
+        self.assertEqual('peanut', next(result))
+        self.assertEqual('butter', next(result))
         result.close()
 
     # ------------------------------------------------------------------
