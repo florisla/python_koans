@@ -37,6 +37,8 @@ def score(dice):
     present = set(dice)
     if 5 in present:
     	score += 50
+    if 1 in present:
+    	score += 100
     return score
 
 class AboutScoringProject(Koan):
