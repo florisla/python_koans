@@ -148,7 +148,7 @@ class AboutMethods(Koan):
         rover = self.Dog()
 
         # This is a little rude, but legal
-        self.assertEqual(__, rover._tail())
+        self.assertEqual('wagging', rover._tail())
 
     def test_attributes_with_double_underscore_prefixes_are_subject_to_name_mangling(self):
         rover = self.Dog()
