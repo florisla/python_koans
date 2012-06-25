@@ -94,16 +94,19 @@ class AboutIteration(Koan):
         # to the functools module.
 
         result = functools.reduce(self.add, [2, 3, 4])
-        self.assertEqual(__, type(result).__name__)
+        self.assertEqual('int', type(result).__name__)
         # Reduce() syntax is same as Python 2
 
-        self.assertEqual(__, result)
+        self.assertEqual(9, result)
 
         result2 = functools.reduce(self.multiply, [2, 3, 4], 1)
-        self.assertEqual(__, result2)
+        self.assertEqual(24, result2)
 
         # Extra Credit:
         # Describe in your own words what reduce does.
+        # -> Assemble a single result value for the iterable by looping over
+        # all elements, while maintaining an intermediate 'accum' (accumulated)
+        # value
 
     # ------------------------------------------------------------------
 
