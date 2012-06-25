@@ -70,8 +70,8 @@ world!
         hi = "Hello, "
         there = "world"
         string = hi + there
-        self.assertEqual(__, hi)
-        self.assertEqual(__, there)
+        self.assertEqual("Hello, ", hi)
+        self.assertEqual("world", there)
 
     def test_plus_equals_will_append_to_end_of_string(self):
         hi = "Hello, "
