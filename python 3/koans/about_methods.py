@@ -94,7 +94,7 @@ class AboutMethods(Koan):
         self.assertEqual(42, self.another_method_with_the_same_name())
 
     def test_that_overlapped_method_is_still_there(self):
-        self.assertEqual(__, self.link_to_overlapped_method())
+        self.assertEqual(10, self.link_to_overlapped_method())
 
     # ------------------------------------------------------------------
 
