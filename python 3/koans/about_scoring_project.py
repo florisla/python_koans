@@ -33,7 +33,11 @@ from runner.koan import *
 # Your goal is to write the score method.
 
 def score(dice):
-    return 0
+    score = 0
+    present = set(dice)
+    if 5 in present:
+    	score += 50
+    return score
 
 class AboutScoringProject(Koan):
     def test_score_of_an_empty_list_is_zero(self):
