@@ -106,7 +106,7 @@ class AboutGenerators(Koan):
         #       section of http://www.python.org/dev/peps/pep-0342/
         next(generator)
 
-        self.assertEqual(__, generator.send(1 + 2))
+        self.assertEqual(3, generator.send(1 + 2))
 
     def test_before_sending_a_value_to_a_generator_next_must_be_called(self):
         generator = self.generator_with_coroutine()
