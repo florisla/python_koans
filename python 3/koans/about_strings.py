@@ -77,7 +77,7 @@ world!
         hi = "Hello, "
         there = "world"
         hi += there
-        self.assertEqual(__, hi)
+        self.assertEqual("Hello, world", hi)
 
     def test_plus_equals_also_leaves_original_string_unmodified(self):
         original = "Hello, "
