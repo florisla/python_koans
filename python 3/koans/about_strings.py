@@ -15,7 +15,7 @@ class AboutStrings(Koan):
 
     def test_triple_quote_strings_are_also_strings(self):
         string = """Howdy, world!"""
-        self.assertEqual(__, isinstance(string, str))
+        self.assertEqual(True, isinstance(string, str))
 
     def test_triple_single_quotes_work_too(self):
         string = '''Bonjour tout le monde!'''
