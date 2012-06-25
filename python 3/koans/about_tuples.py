@@ -18,7 +18,7 @@ class AboutTuples(Koan):
         # Note, assertRegexpMatches() uses regular expression pattern matching,
         # so you don't have to copy the whole message.
 
-        self.assertRegexpMatches(msg, __)
+        self.assertRegexpMatches(msg, 'object does not support item assignment')
 
     def test_tuples_are_immutable_so_appending_is_not_possible(self):
         count_of_three =  (1, 2, 5)
