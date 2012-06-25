@@ -17,7 +17,7 @@ class AboutTrueAndFalse(Koan):
         self.assertEqual('false stuff', self.truth_value(False))
 
     def test_none_is_treated_as_false(self):
-        self.assertEqual(__, self.truth_value(None))
+        self.assertEqual('false stuff', self.truth_value(None))
 
     def test_zero_is_treated_as_false(self):
         self.assertEqual(__, self.truth_value(0))
