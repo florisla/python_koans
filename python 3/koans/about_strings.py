@@ -60,7 +60,7 @@ world!
 
     def test_plus_concatenates_strings(self):
         string = "Hello, " + "world"
-        self.assertEqual(__, string)
+        self.assertEqual("Hello, world", string)
 
     def test_adjacent_strings_are_concatenated_automatically(self):
         string = "Hello" ", " "World"
