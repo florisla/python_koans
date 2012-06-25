@@ -22,7 +22,7 @@ class AboutTuples(Koan):
 
     def test_tuples_are_immutable_so_appending_is_not_possible(self):
         count_of_three =  (1, 2, 5)
-        with self.assertRaises(___): count_of_three.append("boom")
+        with self.assertRaises(AttributeError): count_of_three.append("boom")
 
         # Tuples are less flexible than lists, but faster.
 
