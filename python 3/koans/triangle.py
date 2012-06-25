@@ -18,10 +18,12 @@
 #
 def triangle(a, b, c):
     dimensions = len({a, b, c})
-    if  dimensions == 1:
-        return 'equilateral'
-    if dimensions == 2:
-        return 'isosceles'
+    dimension_types = {
+        1: 'equilateral',
+        2: 'isosceles',
+        3: 'scalene',
+    }
+    return dimension_types[dimensions]
 
 # Error class used in part 2.  No need to change this code.
 class TriangleError(Exception):
