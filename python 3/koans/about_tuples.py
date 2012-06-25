@@ -33,7 +33,7 @@ class AboutTuples(Koan):
         list_count.append("boom")
         count_of_three = tuple(list_count)
 
-        self.assertEqual(__, count_of_three)
+        self.assertEqual((1, 2, 5, 'boom'), count_of_three)
 
     def test_tuples_of_one_look_peculiar(self):
         self.assertEqual(__, (1).__class__.__name__)
