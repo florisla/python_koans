@@ -102,7 +102,7 @@ world!
         value1 = 'doh'
         value2 = 'DOH'
         string = "The values are {1}, {0}, {0} and {1}!".format(value1, value2)
-        self.assertEqual(__, string)
+        self.assertEqual("The values are DOH, doh, doh and DOH!", string)
 
     def test_any_python_expression_may_be_interpolated(self):
         import math # import a standard python module with math functions
