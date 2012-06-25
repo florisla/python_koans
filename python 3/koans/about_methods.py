@@ -59,9 +59,9 @@ class AboutMethods(Koan):
         return args
 
     def test_calling_with_variable_arguments(self):
-        self.assertEqual(__, self.method_with_var_args())
+        self.assertEqual((), self.method_with_var_args())
         self.assertEqual(('one',), self.method_with_var_args('one'))
-        self.assertEqual(__, self.method_with_var_args('one', 'two'))
+        self.assertEqual(('one', 'two'), self.method_with_var_args('one', 'two'))
 
     # ------------------------------------------------------------------
 
@@ -72,7 +72,7 @@ class AboutMethods(Koan):
         def function_with_the_same_name(a, b):
             return a * b
 
-        self.assertEqual(__, function_with_the_same_name(3,4))
+        self.assertEqual(12, function_with_the_same_name(3,4))
 
     def test_calling_methods_in_same_class_with_explicit_receiver(self):
         def function_with_the_same_name(a, b):
