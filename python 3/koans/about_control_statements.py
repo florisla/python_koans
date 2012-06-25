@@ -24,7 +24,7 @@ class AboutControlStatements(Koan):
         while i <= 10:
             result = result * i
             i += 1
-        self.assertEqual(__, result)
+        self.assertEqual(2*3*4*5*6*7*8*9*10, result)
 
     def test_break_statement(self):
         i = 1
