@@ -116,7 +116,7 @@ class AboutGenerators(Koan):
         except TypeError as ex:
           ex2 = ex
 
-        self.assertRegexpMatches(ex2.args[0], __)
+        self.assertRegexpMatches(ex2.args[0], "can't send non-None value to a just-started generator")
 
     # ------------------------------------------------------------------
 
