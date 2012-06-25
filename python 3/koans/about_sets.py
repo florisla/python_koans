@@ -39,10 +39,10 @@ class AboutSets(Koan):
         good_guy = set('macleod')
         bad_guy = set('mutunas')
 
-        self.assertEqual(__, self.chars_in( good_guy - bad_guy) )
-        self.assertEqual(__, self.chars_in( good_guy | bad_guy ))
-        self.assertEqual(__, self.chars_in( good_guy & bad_guy ))
-        self.assertEqual(__, self.chars_in( good_guy ^ bad_guy ))
+        self.assertEqual('cdelo', self.chars_in( good_guy - bad_guy) )
+        self.assertEqual('acdelmnostu', self.chars_in( good_guy | bad_guy ))
+        self.assertEqual('am', self.chars_in( good_guy & bad_guy ))
+        self.assertEqual('cdelnostu', self.chars_in( good_guy ^ bad_guy ))
 
     # ------------------------------------------------------------------
 
