@@ -127,7 +127,7 @@ world!
     def test_strings_can_be_split(self):
         string = "Sausage Egg Cheese"
         words = string.split()
-        self.assertListEqual([__, __, __], words)
+        self.assertListEqual(['Sausage', 'Egg', 'Cheese'], words)
 
     def test_strings_can_be_split_with_different_patterns(self):
         import re #import python regular expression library
