@@ -38,7 +38,9 @@ def score(dice):
     ones = len([d for d in dice if d==1])
     if fives < 3:
     	score += fives * 50
-    if ones < 3:
+    if ones == 3:
+    	score += 1000
+    elif ones < 3:
     	score += ones * 100
     return score
 
