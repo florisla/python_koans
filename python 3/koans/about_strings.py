@@ -36,7 +36,7 @@ class AboutStrings(Koan):
     def test_use_backslash_for_escaping_quotes_in_strings(self):
         a = "He said, \"Don't\""
         b = 'He said, "Don\'t"'
-        self.assertEqual(__, (a == b))
+        self.assertEqual(True, (a == b))
 
     def test_use_backslash_at_the_end_of_a_line_to_continue_onto_the_next_line(self):
         string = "It was the best of times,\n\
