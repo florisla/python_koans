@@ -24,8 +24,8 @@ class AboutSets(Koan):
         self.assertEqual('dict', type({}).__name__)
 
     def test_creating_sets_using_strings(self):
-        self.assertEqual(__, {'12345'})
-        self.assertEqual(__, set('12345'))
+        self.assertEqual(set(['12345']), {'12345'})
+        self.assertEqual({'1', '2', '3', '4', '5'}, set('12345'))
 
     def test_convert_the_set_into_a_list_to_sort_it(self):
         self.assertEqual(__, sorted(set('12345')))
