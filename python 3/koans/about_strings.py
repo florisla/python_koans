@@ -137,7 +137,7 @@ world!
 
         words = pattern.split(string)
 
-        self.assertListEqual([__, __, __, __], words)
+        self.assertListEqual(['the', 'rain', 'in', 'spain'], words)
 
         # Pattern is a Python regular expression pattern which matches ',' or ';'
 
