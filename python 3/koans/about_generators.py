@@ -88,7 +88,7 @@ class AboutGenerators(Koan):
 
     def test_generator_keeps_track_of_local_variables(self):
         result = self.sum_it(range(2,5))
-        self.assertEqual(__, list(result))
+        self.assertEqual([2, 2+3, 2+3+4], list(result))
 
     # ------------------------------------------------------------------
 
