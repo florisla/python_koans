@@ -53,7 +53,7 @@ world!
     def test_triple_quoted_strings_need_less_escaping(self):
         a = "Hello \"world\"."
         b = """Hello "world"."""
-        self.assertEqual(__, (a == b))
+        self.assertEqual(True, (a == b))
 
     def but_you_still_have_to_be_careful_at_the_end_of_a_triple_quoted_string(self):
         string = """Hello "world\""""
