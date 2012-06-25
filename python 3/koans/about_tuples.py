@@ -51,7 +51,7 @@ class AboutTuples(Koan):
         lat = (37, 14, 6, 'N')
         lon = (115, 48, 40, 'W')
         place = ('Area 51', lat, lon)
-        self.assertEqual(__, place)
+        self.assertEqual(('Area 51', (37, 14, 6, 'N'), (115, 48, 40, 'W')), place)
 
     def test_tuples_are_good_for_representing_records(self):
         locations = [
