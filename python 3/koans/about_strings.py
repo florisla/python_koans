@@ -110,7 +110,7 @@ world!
         decimal_places = 4
         string = "The square root of 5 is {0:.{1}f}".format(math.sqrt(5), \
             decimal_places)
-        self.assertEqual(__, string)
+        self.assertEqual("The square root of 5 is 2.2361", string)
 
     def test_you_can_get_a_substring_from_a_string(self):
         string = "Bacon, lettuce and tomato"
