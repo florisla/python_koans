@@ -152,10 +152,10 @@ class AboutMethods(Koan):
 
     def test_attributes_with_double_underscore_prefixes_are_subject_to_name_mangling(self):
         rover = self.Dog()
-        with self.assertRaises(___): password = rover.__password()
+        with self.assertRaises(AttributeError): password = rover.__password()
 
         # But this still is!
-        self.assertEqual(__, rover._Dog__password())
+        self.assertEqual('password', rover._Dog__password())
 
         # Name mangling exists to avoid name clash issues when subclassing.
         # It is not for providing effective access protection
