@@ -62,7 +62,7 @@ class AboutIteration(Koan):
         for item in filter(is_even, seq):
             even_numbers.append(item)
 
-        self.assertEqual(__, even_numbers)
+        self.assertEqual([2, 4, 6], even_numbers)
 
     def test_just_return_first_item_found(self):
         def is_big_name(item):
