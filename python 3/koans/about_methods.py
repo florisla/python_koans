@@ -91,7 +91,7 @@ class AboutMethods(Koan):
         return 42
 
     def test_that_old_methods_are_hidden_by_redefinitions(self):
-        self.assertEqual(__, self.another_method_with_the_same_name())
+        self.assertEqual(42, self.another_method_with_the_same_name())
 
     def test_that_overlapped_method_is_still_there(self):
         self.assertEqual(__, self.link_to_overlapped_method())
