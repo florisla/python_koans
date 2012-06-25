@@ -17,8 +17,11 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    if len({a, b, c}) == 1:
+    dimensions = len({a, b, c})
+    if  dimensions == 1:
         return 'equilateral'
+    if dimensions == 2:
+        return 'isosceles'
 
 # Error class used in part 2.  No need to change this code.
 class TriangleError(Exception):
