@@ -78,7 +78,7 @@ class AboutMethods(Koan):
         def function_with_the_same_name(a, b):
             return a * b
 
-        self.assertEqual(__, self.function_with_the_same_name(3,4))
+        self.assertEqual(7, self.function_with_the_same_name(3,4))
 
     # ------------------------------------------------------------------
 
