@@ -41,8 +41,8 @@ class AboutModules(Koan):
         goose = Goose()
         hamster = Hamster()
         
-        self.assertEqual(__, goose.name)
-        self.assertEqual(__, hamster.name)
+        self.assertEqual('Mr Stabby', goose.name)
+        self.assertEqual('Phil', hamster.name)
         
     def test_modules_hide_attributes_prefixed_by_underscores(self):
         with self.assertRaises(___): private_squirrel = _SecretSquirrel()
