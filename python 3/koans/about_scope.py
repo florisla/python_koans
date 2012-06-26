@@ -54,7 +54,7 @@ class AboutScope(Koan):
 
     def test_constants_are_assumed_by_convention_only(self):
         self.PI = "rhubarb"
-        self.assertEqual(_____, self.PI)
+        self.assertEqual('rhubarb', self.PI)
         # There aren't any real constants in python. Its up to the developer
         # to keep to the convention and not modify them.
 
