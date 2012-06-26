@@ -95,7 +95,7 @@ class AboutMultipleInheritance(Koan):
             jeff.set_name("Rover")
         except:
             self.fail("This should not happen")
-        self.assertEqual(__, jeff.can_climb_walls())
+        self.assertEqual(True, jeff.can_climb_walls())
   
     def test_base_class_methods_can_affect_instance_variables_in_the_object(self):
         jeff = self.Spiderpig()
