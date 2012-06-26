@@ -29,8 +29,8 @@ class AboutModules(Koan):
         
         jims_dog = jims.Dog()
         joes_dog = joes.Dog()
-        self.assertEqual(__, jims_dog.identify())
-        self.assertEqual(__, joes_dog.identify())
+        self.assertEqual('jims dog', jims_dog.identify())
+        self.assertEqual('joes dog', joes_dog.identify())
 
     def test_importing_all_module_attributes_at_once(self):
         # NOTE Using this module level import declared at the top of this script:
