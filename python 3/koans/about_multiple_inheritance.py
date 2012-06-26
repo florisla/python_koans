@@ -132,7 +132,7 @@ class AboutMultipleInheritance(Koan):
         self.assertRegexpMatches(next.here(), 'Pig')
 
         next = super(AboutMultipleInheritance.Pig, jeff)
-        self.assertRegexpMatches(next.here(), __)
+        self.assertRegexpMatches(next.here(), 'Spider')
         
         # Hang on a minute?!? That last class name might be a super class of
         # the 'jeff' object, but its hardly a superclass of Pig, is it?
