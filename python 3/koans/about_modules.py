@@ -22,7 +22,7 @@ class AboutModules(Koan):
         from .local_module import Duck
         
         duck = Duck() # no module qualifier needed this time
-        self.assertEqual(__, duck.name)
+        self.assertEqual('Daffy', duck.name)
 
     def test_we_can_import_multiple_items_at_once(self):
         from . import jims, joes
