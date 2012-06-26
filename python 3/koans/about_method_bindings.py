@@ -51,7 +51,7 @@ class AboutMethodBindings(Koan):
 
     def test_inner_functions_are_unbound(self):
         function2.get_fruit = function
-        with self.assertRaises(___): cls = function2.get_fruit.__self__
+        with self.assertRaises(AttributeError): cls = function2.get_fruit.__self__
 
     # ------------------------------------------------------------------
 
