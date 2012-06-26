@@ -112,7 +112,7 @@ class AboutDecoratingWithClasses(Koan):
         self.assertEqual("Increments a value by one. Kind of.", self.count_badly.__doc__)
 
     def test_documentor_which_already_has_a_docstring(self):
-        self.assertEqual(__, self.idler.__doc__)
+        self.assertEqual("Idler: Does nothing", self.idler.__doc__)
 
     # ------------------------------------------------------------------
         
