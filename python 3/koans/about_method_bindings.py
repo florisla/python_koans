@@ -25,8 +25,8 @@ class AboutMethodBindings(Koan):
 
     def test_functions_have_attributes(self):
         obj = Class()
-        self.assertEqual(__, len(dir(function)))
-        self.assertEqual(__, dir(function) == dir(obj.method.__func__))
+        self.assertEqual(32, len(dir(function)))
+        self.assertEqual(True, dir(function) == dir(obj.method.__func__))
 
     def test_methods_have_different_attributes(self):
         obj = Class()
