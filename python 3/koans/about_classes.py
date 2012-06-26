@@ -129,7 +129,7 @@ class AboutClasses(Koan):
             return self
 
         def __str__(self):
-            return __
+            return self._name
 
         def __repr__(self):
             return "<Dog named '" + self._name + "'>"
@@ -137,7 +137,7 @@ class AboutClasses(Koan):
     def test_inside_a_method_self_refers_to_the_containing_object(self):
         fido = self.Dog6("Fido")
 
-        self.assertEqual(__, fido.get_self())  # Not a string!
+        self.assertEqual(fido, fido.get_self())  # Not a string!
 
     def test_str_provides_a_string_version_of_the_object(self):
         fido = self.Dog6("Fido")
@@ -147,7 +147,7 @@ class AboutClasses(Koan):
     def test_str_is_used_explicitly_in_string_interpolation(self):
         fido = self.Dog6("Fido")
 
-        self.assertEqual(__, "My dog is " + str(fido))
+        self.assertEqual("My dog is Fido", "My dog is " + str(fido))
 
     def test_repr_provides_a_more_complete_string_version(self):
         fido = self.Dog6("Fido")
