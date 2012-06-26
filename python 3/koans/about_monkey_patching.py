@@ -35,7 +35,7 @@ class AboutMonkeyPatching(Koan):
         except Exception as ex:
             err_msg = ex.args[0]
 
-        self.assertRegexpMatches(err_msg, __)
+        self.assertRegexpMatches(err_msg, "can't set attributes of built-in/extension type 'int'")
 
     # ------------------------------------------------------------------
 
