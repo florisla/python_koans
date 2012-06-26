@@ -86,4 +86,4 @@ class AboutInheritance(Koan):
         
     def test_base_init_has_to_be_called_explicitly(self):
         boxer = self.Greyhound("Boxer")
-        self.assertEqual(__, boxer.name)
+        self.assertEqual('Boxer', boxer.name)
