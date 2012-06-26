@@ -20,8 +20,8 @@ class AboutMethodBindings(Koan):
 
     def test_methods_are_also_bound_to_a_function(self):
         obj = Class()
-        self.assertEqual(__, obj.method())
-        self.assertEqual(__, obj.method.__func__(obj))
+        self.assertEqual('parrot', obj.method())
+        self.assertEqual('parrot', obj.method.__func__(obj))
 
     def test_functions_have_attributes(self):
         obj = Class()
