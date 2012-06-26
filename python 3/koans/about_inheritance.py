@@ -58,7 +58,7 @@ class AboutInheritance(Koan):
   
     def test_subclasses_can_invoke_parent_behavior_via_super(self):
         ralph = self.BullDog("Ralph")
-        self.assertEqual(__, ralph.bark())
+        self.assertEqual('WOOF, GRR', ralph.bark())
   
     # ------------------------------------------------------------------
   
