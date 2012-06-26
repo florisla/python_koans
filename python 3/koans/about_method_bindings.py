@@ -47,7 +47,7 @@ class AboutMethodBindings(Koan):
 
     def test_functions_can_have_inner_functions(self):
         function2.get_fruit = function
-        self.assertEqual(__, function2.get_fruit())
+        self.assertEqual('pineapple', function2.get_fruit())
 
     def test_inner_functions_are_unbound(self):
         function2.get_fruit = function
