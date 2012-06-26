@@ -87,7 +87,7 @@ class AboutMultipleInheritance(Koan):
   
     def test_normal_methods_are_available_in_the_object(self):
         jeff = self.Spiderpig()
-        self.assertRegexpMatches(jeff.speak(), __)
+        self.assertRegexpMatches(jeff.speak(), "This looks like a job for Spiderpig!")
 
     def test_base_class_methods_are_also_available_in_the_object(self):
         jeff = self.Spiderpig()
