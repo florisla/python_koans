@@ -26,7 +26,7 @@ class AboutInheritance(Koan):
         self.assertEqual(True, issubclass(self.Chihuahua, self.Dog))
   
     def test_this_all_classes_in_python_3_ultimately_inherit_from_object_class(self):
-        self.assertEqual(__, issubclass(self.Chihuahua, object))
+        self.assertEqual(True, issubclass(self.Chihuahua, object))
         
         # Note: This isn't the case in Python 2. In that version you have
         # to inherit from a built in class or object explicitly
