@@ -23,11 +23,11 @@ class AboutScope(Koan):
         # name 'jims' module name is taken from jim.py filename
         
         rover = joes.Dog()
-        self.assertEqual(__, fido.identify())
-        self.assertEqual(__, rover.identify())
+        self.assertEqual('jims dog', fido.identify())
+        self.assertEqual('joes dog', rover.identify())
         
-        self.assertEqual(__, type(fido) == type(rover))
-        self.assertEqual(__, jims.Dog == joes.Dog)
+        self.assertEqual(False, type(fido) == type(rover))
+        self.assertEqual(False, jims.Dog == joes.Dog)
   
     # ------------------------------------------------------------------
   
