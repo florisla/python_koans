@@ -77,7 +77,7 @@ class AboutScope(Koan):
         global counter
         start = counter
         self.increment_using_global_counter()
-        self.assertEqual(__, counter == start + 1)
+        self.assertEqual(True, counter == start + 1)
 
     # ------------------------------------------------------------------
 
