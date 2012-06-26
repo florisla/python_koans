@@ -35,7 +35,7 @@ class AboutScope(Koan):
         pass
     
     def test_bare_bones_class_names_do_not_assume_the_current_scope(self):
-        self.assertEqual(__, AboutScope.str == str)
+        self.assertEqual(False, AboutScope.str == str)
     
     def test_nested_string_is_not_the_same_as_the_system_string(self):
         self.assertEqual(__, self.str == type("HI"))
