@@ -51,7 +51,7 @@ class AboutModules(Koan):
         from .local_module import Duck # local_module.py
         
         duck = Duck()
-        self.assertEqual(__, duck._password)
+        self.assertEqual('password', duck._password)
         # module level attribute hiding doesn't affect class attributes
         # (unless the class itself is hidden).
             
