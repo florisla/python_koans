@@ -79,7 +79,7 @@ class AboutAttributeAccess(Koan):
     def test_non_foo_messages_are_treated_normally(self):
         catcher = self.WellBehavedFooCatcher()
 
-        with self.assertRaises(___): catcher.normal_undefined_attribute
+        with self.assertRaises(AttributeError): catcher.normal_undefined_attribute
 
     # ------------------------------------------------------------------
 
