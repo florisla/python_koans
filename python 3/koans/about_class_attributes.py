@@ -126,8 +126,8 @@ class AboutClassAttributes(Koan):
     def test_classes_and_instances_do_share_class_attributes(self):
         fido = self.Dog3()
         fido.set_name("Fido")
-        self.assertEqual(__, fido.get_name())
-        self.assertEqual(__, self.Dog3.get_name())
+        self.assertEqual('Fido', fido.get_name())
+        self.assertEqual('Fido', self.Dog3.get_name())
 
     # ------------------------------------------------------------------
 
