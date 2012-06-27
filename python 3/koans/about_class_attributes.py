@@ -52,7 +52,7 @@ class AboutClassAttributes(Koan):
             return 'fidos wag'
         fido.wag = wag
 
-        with self.assertRaises(___): rover.wag()
+        with self.assertRaises(AttributeError): rover.wag()
 
     # ------------------------------------------------------------------
 
