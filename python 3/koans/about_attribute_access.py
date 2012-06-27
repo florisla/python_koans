@@ -113,7 +113,7 @@ class AboutAttributeAccess(Koan):
         catcher = self.RecursiveCatcher()
         catcher.my_method()
         global stack_depth
-        self.assertEqual(__, stack_depth)
+        self.assertEqual(11, stack_depth)
 
     # ------------------------------------------------------------------
 
