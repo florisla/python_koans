@@ -145,7 +145,7 @@ class AboutClassAttributes(Koan):
         self.assertEqual('dogs class method', self.Dog4.a_class_method())
 
     def test_you_can_define_static_methods_without_using_a_decorator(self):
-        self.assertEqual(__, self.Dog4.a_static_method())
+        self.assertEqual('dogs static method', self.Dog4.a_static_method())
 
     # ------------------------------------------------------------------
 
