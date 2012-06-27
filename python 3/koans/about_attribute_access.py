@@ -165,9 +165,9 @@ class AboutAttributeAccess(Koan):
         fanboy.comic = 'The Laminator, issue #1'
         fanboy.pie = 'blueberry'
 
-        self.assertEqual(__, fanboy.a_pie)
+        self.assertEqual('blueberry', fanboy.a_pie)
 
-        prefix = '__'
+        prefix = 'my'
         self.assertEqual("The Laminator, issue #1", getattr(fanboy, prefix + '_comic'))
 
     # ------------------------------------------------------------------
@@ -189,7 +189,7 @@ class AboutAttributeAccess(Koan):
         setter = self.ScarySetter()
         setter.e = "mc hammer"
 
-        self.assertEqual(__, setter.altered_e)
+        self.assertEqual("mc hammer", setter.altered_e)
 
     def test_it_mangles_some_internal_attributes(self):
         setter = self.ScarySetter()
