@@ -23,7 +23,7 @@ class AboutClassAttributes(Koan):
 
     def test_objects_have_methods(self):
         fido = self.Dog()
-        self.assertEqual(__, len(dir(fido)))
+        self.assertEqual(24, len(dir(fido)))
 
     def test_classes_have_methods(self):
         self.assertEqual(__, len(dir(self.Dog)))
