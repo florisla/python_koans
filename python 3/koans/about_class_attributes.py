@@ -83,7 +83,7 @@ class AboutClassAttributes(Koan):
         self.assertRegexpMatches(self.Dog2.growl(), 'classmethod growl, arg: cls=Dog2')
 
     def test_staticmethods_are_unbound_functions_housed_in_a_class(self):
-        self.assertRegexpMatches(self.Dog2.bark(), __)
+        self.assertRegexpMatches(self.Dog2.bark(), "staticmethod bark, arg: None")
 
     def test_staticmethods_also_overshadow_instance_methods(self):
         fido = self.Dog2()
