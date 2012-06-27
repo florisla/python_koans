@@ -41,14 +41,14 @@ class AboutAttributeAccess(Koan):
     def test_intercepting_return_values_can_disrupt_the_call_chain(self):
         catcher = self.CatchAllAttributeReads()
 
-        self.assertRegexpMatches(catcher.foobaz, __) # This is fine
+        self.assertRegexpMatches(catcher.foobaz, "Someone called 'foobaz' and it could not be found") # This is fine
 
         try:
             catcher.foobaz(1)
         except TypeError as ex:
             err_msg = ex.args[0]
 
-        self.assertRegexpMatches(err_msg, __)
+        self.assertRegexpMatches(err_msg, "object is not callable")
 
         # foobaz returns a string. What happens to the '(1)' part?
         # Try entering this into a python console to reproduce the issue:
