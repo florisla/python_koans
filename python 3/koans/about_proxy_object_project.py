@@ -38,6 +38,9 @@ class Proxy:
         self._messages_received.append(attr_name + '=')
         setattr(self._obj, attr_name, value)
 
+    def was_called(self, method_name):
+        return method_name in self._messages_received
+
     def messages(self):
         return self._messages_received
 
