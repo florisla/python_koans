@@ -41,6 +41,12 @@ class Proxy:
     def was_called(self, method_name):
         return method_name in self._messages_received
 
+    def number_of_times_called(self, method_name):
+        count = 0
+        for method in self._messages_received:
+            if method == method_name: count+=1
+        return count
+
     def messages(self):
         return self._messages_received
 
