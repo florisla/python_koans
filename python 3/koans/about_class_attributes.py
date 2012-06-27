@@ -114,7 +114,7 @@ class AboutClassAttributes(Koan):
 
     def test_classmethods_can_not_be_used_as_properties(self):
         fido = self.Dog3()
-        with self.assertRaises(___): fido.name = "Fido"
+        with self.assertRaises(TypeError): fido.name = "Fido"
 
     def test_classes_and_instances_do_not_share_instance_attributes(self):
         fido = self.Dog3()
