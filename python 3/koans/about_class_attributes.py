@@ -87,7 +87,7 @@ class AboutClassAttributes(Koan):
 
     def test_staticmethods_also_overshadow_instance_methods(self):
         fido = self.Dog2()
-        self.assertRegexpMatches(fido.bark(), __)
+        self.assertRegexpMatches(fido.bark(), "staticmethod bark, arg: None")
 
     # ------------------------------------------------------------------
 
