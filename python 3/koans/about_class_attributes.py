@@ -75,7 +75,7 @@ class AboutClassAttributes(Koan):
             return "classmethod growl, arg: cls=" + cls.__name__
 
     def test_since_classes_are_objects_you_can_define_singleton_methods_on_them_too(self):
-        self.assertRegexpMatches(self.Dog2.growl(), __)
+        self.assertRegexpMatches(self.Dog2.growl(), 'classmethod growl, arg: cls=Dog2')
 
     def test_classmethods_are_not_independent_of_instance_methods(self):
         fido = self.Dog2()
