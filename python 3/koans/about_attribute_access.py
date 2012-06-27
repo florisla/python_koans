@@ -59,7 +59,7 @@ class AboutAttributeAccess(Koan):
     def test_changes_to_the_getattribute_implementation_affects_getattr_function(self):
         catcher = self.CatchAllAttributeReads()
 
-        self.assertRegexpMatches(getattr(catcher, 'any_attribute'), __)
+        self.assertRegexpMatches(getattr(catcher, 'any_attribute'), "Someone called 'any_attribute' and it could not be found")
 
     # ------------------------------------------------------------------
 
