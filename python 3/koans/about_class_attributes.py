@@ -151,4 +151,4 @@ class AboutClassAttributes(Koan):
 
     def test_heres_an_easy_way_to_explicitly_call_class_methods_from_instance_methods(self):
         fido = self.Dog4()
-        self.assertEqual(__, fido.__class__.a_class_method())
+        self.assertEqual('dogs class method', fido.__class__.a_class_method())
