@@ -42,7 +42,7 @@ class AboutClassAttributes(Koan):
         fido = self.Dog()
         fido.wag = lambda : 'fidos wag'
 
-        self.assertEqual(__, fido.wag())
+        self.assertEqual('fidos wag', fido.wag())
 
     def test_other_objects_are_not_affected_by_these_singleton_functions(self):
         fido = self.Dog()
